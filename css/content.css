@@ -1,0 +1,346 @@
+/* Define Fonts */
+@font-face {
+    font-family: 'coolvetica';
+    src: url("../fonts/coolvetica.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: plation;
+    src: url("../fonts/plation.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: zrnic;
+    src: url("../fonts/zrnic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: icon-psx;
+    src: url("../fonts/icon-psx.ttf") format("truetype");
+}
+
+/* styles for body element */
+body {
+    background-color: #006FCD;
+}
+
+
+
+/* styles for teh container id */
+#container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+
+
+}
+
+/* styles for the header section */
+header {
+    background-color: #1d1d1c;
+    text-align: left;
+    padding: 10px;
+    font-size: 20px;
+    border: 0px solid #1d1d1c;
+    border-radius: 10px 10px 0px 0px;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit
+}
+
+header a {
+    width: 100%;
+
+}
+
+
+#mainImgCont {
+    width: 100%;
+}
+
+#bannerImg {
+    max-height: 300px;
+}
+
+#bannerComplement {
+    min-height: 80px;
+    margin-bottom: 20px;
+}
+
+#mainSloganCont h1 {
+    color: white;
+    margin-left: 50px;
+    margin-top: 0px;
+    font-family: 'coolvetica';
+    font-weight: 200;
+}
+/* *********************************************** NAV ************************************************** */
+/* styles for the nav element */
+nav {
+    font-family: 'zrnic';
+    letter-spacing: 2px;
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #1d1d1c;
+    color: white;
+    display: block;
+    overflow: hidden;
+}
+
+
+
+nav ul {
+    float: left;
+    width: 60%;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+}
+
+
+nav form {
+    text-align: right;
+    float: right;
+    width: 30%;
+    height: 100%;
+    
+}
+
+
+nav li {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    width: 20%;
+
+    display: inline;
+    float: left;
+    white-space: nowrap;
+    border-radius: 0;
+    background-color: transparent;
+}
+
+nav input {
+    height: 48px;
+    color: black;
+    border: 2px solid #333;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 0 30px;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+nav button {
+    height: 50px;
+    color: white;
+    background-color: grey;
+    border: 2px solid grey;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 0 30px;
+    font-weight: normal;
+}
+
+.selected-li {
+    color: #006FCD;
+    cursor: default;
+}
+
+/* *********************************************** MAIN ************************************************** */
+
+main {
+    clear: left;
+    /* margin-top: 4em; */
+    border-radius: 0;
+    overflow: auto;
+    margin-bottom: 20px;
+}
+
+/* *********************************************** Section ************************************************** */
+
+section {
+    font-family: 'zrnic';
+    letter-spacing: 1px;
+    font-weight: 100;
+    font-size: 1.25em;
+    background-color: #1d1d1c;
+    color: white;
+    float: right;
+    width: 70%;
+    padding: 15px;
+}
+
+section h2 {
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+section form{
+    padding: 10px;
+}
+
+.input-group {
+    display: inline-block;
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+.input-group .input-label {
+    display: block;
+    width: 100%;
+}
+
+
+.input-group .input-element {
+    margin-top: 15px;
+
+    display: block;
+    font-family: inherit;
+    width: inherit;
+    min-height: 48px;
+    color: black;
+    border-radius: 5px;
+    padding: 0 30px;
+    font-size: 15px;
+    width: -moz-available; 
+    width: -webkit-fill-available;
+}
+.input-group.xl{
+    width: -moz-available; 
+    width: -webkit-fill-available;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.form-submit{
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: white;
+    background-color: #006FCD;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px 30px;
+    
+    width: 100%;
+}
+
+
+
+.crossColor {
+    color: #86afe3;
+}
+
+.squareColor {
+    color: #d79cd9;
+}
+
+.circleColor {
+    color: #e34746;
+}
+
+.triangleColor {
+    color: #52dc84;
+}
+
+.postImage {
+    margin-top: 20px;
+    width: 70%;
+    padding-left: 15%;
+}
+
+
+
+.divider {
+    border-color: #006FCD;
+}
+
+/* *********************************************** Aside ************************************************** */
+
+
+aside {
+    background-color: #1d1d1c;
+    color: white;
+    float: left;
+    width: 24%;
+    padding: 15px;
+    
+}
+aside h2 {
+    font-family: 'zrnic';
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+aside ul {
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+    list-style-position: outside;
+    padding-left: 0;
+}
+
+aside ul li {
+    margin: 10px 0px;
+    text-align: center;
+}
+
+aside ul li a span {
+    display: block;
+    font-family: 'zrnic';
+    font-size: 30px;
+}
+
+aside ul li a img {
+    display: none;
+}
+
+aside ul li a:hover img {
+    display: block;
+    max-height: 80px;
+    max-width: 100%;
+}
+
+aside ul li a:hover span {
+    display: none;
+}
+
+
+/* *********************************************** FOOTER ************************************************** */
+/* footer styles */
+footer {
+    font-size: 0.7em;
+    text-align: center;
+    color: #ffffff;
+    background-color: #1d1d1c;
+    border: 0px solid black;
+    border-radius: 0px 0px 10px 10px;
+    overflow: auto;
+  }
+  /* styles for anchor tag in footer */
+  footer a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  /* styles for the copyright div */
+  #copyright {
+    float: left;
+    margin-top: 1.2em;
+    width: 80%;
+  }
+  
+  /* styles for the social div */
+  #social {
+    float: right;
+    width: 20%;
+  }

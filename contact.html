@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>PlayStation&reg; World</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/content.css">
+</head>
+
+<body>
+    <div id="container">
+        <!-- a section for the headings of the webpage and logo -->
+        <header>
+            <a href="index.html">
+                <div id="mainImgCont">
+                    <img id="bannerImg"
+                        src="images/ps-white.png"
+                        alt="PlayStation&reg; World Logo"
+                        title="PlayStation&reg; World"/>
+                    <img id="bannerComplement"
+                        src="images/world.png"
+                        alt="PlayStation&reg; World Logo"
+                        title="PlayStation&reg; World"/>
+                </div>
+                <div  id="mainSloganCont">
+                    <h1>
+                        <span class="squareColor">All</span>
+                        <span class="circleColor">generations</span>
+                        <span class="triangleColor">in</span>
+                        <span class="crossColor">one!</span>
+                    </h3>
+                </div>
+            </a>
+        </header>
+
+        <!-- this area is for the hyperlinks to other pages -->
+        <nav>
+            
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" >About Us</a></li>
+                <li><a href="#" class="selected-li">Contact Us</a></li>
+            </ul>
+            <form>
+                <input type="text" placeholder="Search article">
+                <button type="submit">Search</button>
+            </form>
+        </nav>
+
+        <main>
+            <section>
+                <h2>Contact us</h2>
+                <hr class="divider">
+                <p>We would like to know more about you!, please fill the following form:</p>
+                <form>
+                    <div class="input-group">
+                        <label class="input-label" for="fullname">Full name</label>
+                        <input class="input-element" type="text" name="fullname" id="fullname" required>
+                    </div>
+                    <div class="input-group">
+                        <label class="input-label" for="email">Email</label>
+                        <input class="input-element" type="email" name="email" id="email" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label class="input-label" for="gender">Gender</label>
+                        <select class="input-element" name="gender" id="gender">
+                            <option value="female">Female</option>
+                            <option value="male">Male</option>
+                            <option value="nonbinary">Non-binary</option>
+                            <option value="noans" selected>Rather not say</option>
+                        </select>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label class="input-label" for="dob">Date of Birth<label>
+                        <input class="input-element" type="date" name="dob" id="dob" value="2003-01-01">
+                    </div>
+
+                    <div class="input-group">
+                        <label class="input-label list">Would you like to get our weekly free newletter?</label>
+                        <div>
+                          <input type="radio" id="yesContact" name="weekBulletin" value="yesContact" checked>
+                          <label for="yesContact">Yes</label>
+                      
+                          <input type="radio" id="noContact" name="weekBulletin" value="noContact">
+                          <label for="noContact">No</label>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label class="input-label list">I'm interested in learning more about:</label>
+
+                        <input type="checkbox" id="ps5Opt" name="ps5Opt">
+                        <label for="ps5Opt">PlayStation 5</label>
+
+                        <input type="checkbox" id="psrOpt" name="psrOpt">
+                        <label for="psrOpt">Retro PlayStation</label>
+
+                        <input type="checkbox" id="indOpt" name="indOpt">
+                        <label for="indOpt">Indies</label>
+                    </div>
+
+                    <div class="input-group xl">
+                        <label class="input-label" for="comments">Comments<label>
+                        <textarea class="input-element" id="comments" name="comments" rows="5" ></textarea>
+                    </div>
+                    <button class="form-submit" type="submit">Submit</button>
+                </form>
+            </section>
+            <aside>
+                <h2>Articles</h2>
+                <hr class="divider">
+                <ul>
+                    <li >
+                        <a href="ps1.html">
+                            <span>PlayStation<sup>&reg;</sup> 1</span>
+                            <img src="./images/ps1-logo.bmp" alt="">
+                        </a>
+
+                    </li>
+                    <li><hr class="divider"/></li>
+                    <li >
+                        <a href="ps2.html">
+                            <span>PlayStation<sup>&reg;</sup> 2</span>
+                            <img src="./images/ps2-logo.png" alt="">
+                        </a>
+
+                    </li>
+                    <li><hr class="divider"/></li>
+                    <li >
+                        <a href="ps3.html">
+                            <span>PlayStation<sup>&reg;</sup> 3</span>
+                            <img src="./images/ps3-logo.png" alt="">
+                        </a>
+
+                    </li>
+                    <li><hr class="divider"/></li>
+                    <li >
+                        <a href="ps4.html">
+                            <span>PlayStation<sup>&reg;</sup> 4</span>
+                            <img src="./images/ps4-logo.png" alt="">
+                        </a>
+
+                    </li>
+                    <li><hr class="divider"/></li>
+                    <li >
+                        <a href="ps5.html">
+                            <span>PlayStation<sup>&reg;</sup> 5</span>
+                            <img src="./images/ps5-logo.png" alt="">
+                        </a>
+
+                    </li>
+                    <li><hr class="divider"/></li>
+                </ul>
+            </aside>
+        </main>
+        <!-- footer section for the copyright and links to social medias -->
+        <footer>
+            <div id="copyright">
+                <p>&copy; Copyright 2021. All Rights Reserved. <br>
+                <a href="mailto:eddiesri@hotmail.com">eddiesri@hotmail.com</a></p>
+            </div>
+            <div id="social">
+                <p>Connect with us in</p>
+                <p><a href="#"><img src="images/twitterlogo.png" alt="twitter logo"></a></p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
