@@ -215,8 +215,9 @@ section h2 {
 }
 
 table {
-    margin-bottom: 30px;
-    width: 100%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
     border: transparent 0px solid;
 }
 
@@ -238,6 +239,11 @@ table tr th.tHeaders {
     text-align: left;
     text-transform: uppercase;
     border-bottom: #006FCD 1px solid;
+}
+
+#tableFoot{
+    font-size: 30px;
+    color: #006FCD;
 }
 
 /* *********************************************** Aside ************************************************** */

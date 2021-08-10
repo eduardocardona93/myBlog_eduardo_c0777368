@@ -221,6 +221,7 @@ section form{
 
 
 .form-submit{
+    margin-top: 20px;
     font-family: inherit;
     font-size: 20px;
     font-weight: 600;
