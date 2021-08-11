@@ -183,8 +183,14 @@ section h2 {
 
 section form{
     padding: 10px auto;
-    width: 90%;
+    width: 100%;
     text-align: center;
+    font-size: 1.25em;
+}
+
+section form p{
+    text-align: justify;
+    font-size: 1.25em;
 }
 
 .input-group {
@@ -209,12 +215,11 @@ section form{
     color: black;
     border-radius: 5px;
     padding: 0 auto;
-    font-size: 0.7em;
+    font-size: 1.05em;
     width: 90%; 
 }
 .input-group.xl{
-    width: 100%; 
-    padding: 0 auto;
+    width: 90%; 
     margin-left: auto;
     margin-right: auto;
 }
@@ -230,6 +235,8 @@ section form{
     border: 1px solid white;
     border-radius: 5px;
     padding: 10px 30px;
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
 }
 
@@ -352,6 +359,16 @@ section form{
   .games-list{
       font-size: 1.25em;
   }
+
+  /* *********************************************** About ************************************************** */
+.about-img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+
+}
+
 /* *********************************************** General Purpose ************************************************** */
 
 .crossColor {
