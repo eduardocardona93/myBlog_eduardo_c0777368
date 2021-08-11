@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>PlayStation&reg; World</title>
+    <title>PlayStation&reg; World | HOME</title>
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -52,10 +52,54 @@
 
         <main>
             <section>
-                <h2>Welcome to our blog</h2>
+                <h2>Welcome to our world</h2>
                 <hr class="divider">
-                <img class="postImage" src="./images/psall.jpg" alt="All consoles">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod magnam magni incidunt eaque non, rerum laborum id beatae quo nemo, aperiam sit distinctio vero repellat molestias repellendus. Esse, id fugiat.</p>
+
+                <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+
+                    <figure class="mySlides fade">
+                        <img class="slideImg" src="./images/psall.jpg" alt="All PlayStation consoles">
+                        <figcaption class="text">All PlayStation consoles</figcaption>
+                    </figure>
+
+                    <figure class="mySlides fade">
+                        <img class="slideImg" src="./images/psx.jpg" alt="PlayStation 1">
+                        <figcaption class="text">PlayStation 1</figcaption>
+                    </figure>
+                    <figure class="mySlides fade">
+                        <img class="slideImg" src="./images/ps2.jpg" alt="PlayStation 2">
+                        <figcaption class="text">PlayStation 2</figcaption>
+                    </figure>
+                    <figure class="mySlides fade">
+                        <img class="slideImg" src="./images/ps3.jpg" alt="PlayStation 3">
+                        <figcaption class="text">PlayStation 3</figcaption>
+                    </figure>
+                    <figure class="mySlides fade">
+                        <img class="slideImg" src="./images/ps4.jpg" alt="PlayStation 4">
+                        <figcaption class="text">PlayStation 4</figcaption>
+                    </figure>
+                    <figure class="mySlides fade">
+                        <img class="slideImg" src="./images/ps5.jpg" alt="PlayStation 5">
+                        <figcaption class="text">PlayStation 5</figcaption>
+                    </figure>
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                </div>
+                <p>Hello gamer!, this is PlayStation World and we are proud to say, we represent a big community in regard's of Sony's consoles and games topics, we are 1M+ and keep growing.</p>
+                <p>Stay tunned, our daily streams schedule is listed below, so you don't miss out any of our live's, we love to play, discuss and review everything regaring Play Station newest and retro games.</p>
                 <table>
                     <thead>
                         <tr >
@@ -108,44 +152,40 @@
                 <h2>Articles</h2>
                 <hr class="divider">
                 <ul>
-                    <li >
+                    <li>
+                        <a href="#" class="selected-li">
+                            <span>Welcome</span>
+                        </a>
+                    </li>
+                    <li><hr class="divider"/></li>
+                    <li>
                         <a href="ps1.html">
                             <span>PlayStation<sup>&reg;</sup> 1</span>
-                            <img src="./images/ps1-logo.bmp" alt="">
                         </a>
-
                     </li>
                     <li><hr class="divider"/></li>
                     <li >
-                        <a href="ps2.html">
+                        <a href="#">
                             <span>PlayStation<sup>&reg;</sup> 2</span>
-                            <img src="./images/ps2-logo.png" alt="">
                         </a>
-
                     </li>
                     <li><hr class="divider"/></li>
                     <li >
-                        <a href="ps3.html">
+                        <a href="#">
                             <span>PlayStation<sup>&reg;</sup> 3</span>
-                            <img src="./images/ps3-logo.png" alt="">
                         </a>
-
                     </li>
                     <li><hr class="divider"/></li>
                     <li >
-                        <a href="ps4.html">
+                        <a href="#">
                             <span>PlayStation<sup>&reg;</sup> 4</span>
-                            <img src="./images/ps4-logo.png" alt="">
                         </a>
-
                     </li>
                     <li><hr class="divider"/></li>
                     <li >
                         <a href="ps5.html">
                             <span>PlayStation<sup>&reg;</sup> 5</span>
-                            <img src="./images/ps5-logo.png" alt="">
                         </a>
-
                     </li>
                     <li><hr class="divider"/></li>
                 </ul>
@@ -163,7 +203,40 @@
             </div>
         </footer>
     </div>
+    <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            setInterval(() => {
+                slideIndex += 1;
+                showSlides(slideIndex);
+            }, 5000);
+            // Next/previous controls
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
 
+            // Thumbnail image controls
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+            }
+
+    </script>
 </body>
 
 </html>
