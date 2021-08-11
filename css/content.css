@@ -326,6 +326,9 @@ section form p{
     max-width: 100%;
   }
 
+  p a{
+      color: #006FCD;
+  }
   .embed-video{
       width: 100%;
 
